@@ -1,10 +1,19 @@
+
 #include <iostream>
 using namespace std;
 int main(){
-    int array [5] = {1,2,3,4,5};
-    
-    cout << "Size of array = " << sizeof (array) <<endl;
-     cout << "Length Of array = " << sizeof (array) / sizeof (array [0]) ;
+    int array [4] = {1,2,3,4};
+
+    for (int i=0; i<=4; i++){
+        cout << array [i]<<endl;
+    }
+
+
+// use of For each loop It wil Print all the elements of the array
+for (int i: array){
+    cout << i << endl;
+}
+
 
 
     return 0;
