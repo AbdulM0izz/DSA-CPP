@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     // Take input in vector with for loop
     vector<int> v;
-     for (int i = 0; i < 3; i++) {  // We will take 5 inputs
+     for (int i = 0; i < 3; i++) {  // We will take 4 inputs
         int element;
         cin >> element;
         v.push_back(element);
@@ -16,6 +16,9 @@ int main(){
    }
    cout << endl;
 
+   //top insert value in vector
+   v.insert(v.begin()+1,0);
+
    // for each loop to print 
    for (int ele: v){
     cout << ele << " ";
@@ -24,12 +27,12 @@ int main(){
 
    //while loop to print 
 
-   int idx = 0;
-   while(idx < v.size()){
-    cout << v[idx] <<" ";
-    idx++;
-   }
-   cout << endl;
+//    int idx = 0;
+//    while(idx < v.size()){
+//     cout << v[idx] <<" ";
+//     idx++;
+//    }
+//    cout << endl;
    
 
 
