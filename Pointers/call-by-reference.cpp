@@ -6,9 +6,8 @@ void swap(int *x, int *y){
     *y=temp;
 }
 
-
 int main(){
-
+//pass by reference
     int x=10;
     int y=20;
 
