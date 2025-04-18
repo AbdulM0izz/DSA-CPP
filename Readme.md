@@ -1,22 +1,23 @@
-# C++ Learning Journey 🚀
+DSA Practice Repository
+Welcome to my Data Structures and Algorithms (DSA) practice repository. This repository is for regularly solving and documenting DSA problems to improve my understanding and problem-solving abilities.
 
-## Overview
-Welcome to my C++ learning repository! This is a personal archive where I consistently practice fundamental C++ concepts and progressively explore advanced Data Structures and Algorithms (DSA). The goal is to refine problem-solving skills, improve coding efficiency, and deepen my understanding of core programming principles.
+Purpose
+The primary purpose of this repository is to:
 
-## 📌 What's Inside
-- **C++ Fundamentals**: Covering basic syntax, object-oriented programming (OOP), memory management, and more.
-- **Data Structures**: Implementation and usage of arrays, linked lists, stacks, queues, trees, graphs, heaps, hash tables, and more.
-- **Algorithms**: Sorting, searching, recursion, dynamic programming, greedy algorithms, and graph algorithms.
-- **Problem-Solving**: Solving problems from various coding platforms like LeetCode, Codeforces, and HackerRank.
-- **Optimizations**: Enhancing code efficiency with best practices and advanced techniques.
+Enhance logical reasoning and coding effectiveness
 
-## 💡 Why This Repository?
-- To track my progress in C++ and DSA.
-- To document solutions and approaches for better understanding and future reference.
-- To prepare for coding interviews and competitive programming challenges.
-- To share knowledge and collaborate with fellow developers.
+Prepare for coding interviews and technical tests
 
-## 🔧 Technologies Used
-- C++ (Standard Library, STL)
-- Git/GitHub for version control
-- IDEs: VS Code, CLion, CodeBlocks
+Develop a solid foundation in fundamental computer science concepts
+
+Features
+Well-documented C++ solutions for readability
+
+Step-by-step solutions for some problems
+
+Organized by problem source or difficulty
+
+Periodic updates to monitor steady progress
+
+Getting Started
+You are free to browse the repository, go through the solutions, and use them as a reference or learning tool. Suggestions and feedback are always welcome.
