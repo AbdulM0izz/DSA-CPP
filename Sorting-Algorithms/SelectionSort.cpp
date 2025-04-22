@@ -25,6 +25,7 @@
 
     int main()
     {
+          // O (n sqaure ) time comp 
         int n;
         cin >> n;
 

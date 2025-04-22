@@ -19,6 +19,7 @@ void insertionsort (vector<int> &v) {
 }
 
 int main () {
+      // O (n sqaure ) time comp 
     int n;
     cin >> n;
     vector<int> v(n);
