@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-#include <iostream>
-using namespace std;
 
 void merge(int arr[], int l, int mid, int r) {
     int an = mid - l + 1;
