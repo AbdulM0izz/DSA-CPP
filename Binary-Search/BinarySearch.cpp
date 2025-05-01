@@ -1,22 +1,23 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 int binarysearch (vector<int> &input, int target) {
     //define search space 
-    int lo = 0; //start of array
-    int hi = input.size() -1; //end of the array
+    int st = 0; //start of array
+    int en = input.size() -1; //end of the array
 
-    while (lo <= hi)
+    while (st <= en)
     {
         //calculate mid point for search space 
-        int mid = (lo + hi )/ 2;
+        int mid = (st + en )/ 2;
 
         if (input[mid] == target) return mid;
         else if (input[mid] < target ) {
             // discard the left of mid 
-            lo = mid + 1;
+            st = mid + 1;
         }else {
-            hi = mid -1;
+            en = mid -1;
         }
 
     }
@@ -44,3 +45,5 @@ int main () {
 // search space will be next part of the array and starting index will ad mid + 1
 
 //Again take mid of this part like starting index + ending index / 2
+
+//Time complexicity     O(log n)
