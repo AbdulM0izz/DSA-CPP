@@ -26,3 +26,7 @@ int main () {
    
     return 0;
 }
+/***
+ * Time complexicty O (log n)
+ * Space : O (log n)
+ */
