@@ -3,6 +3,10 @@
 using namespace std;
 
 int firstoccurance (vector<int> input, int target) {
+    /**
+     * Time complexity O (log n)
+     * Space : 0 (1)
+     */
    int lo = 0;
    int hi = input.size() -1;
    int ans = -1;
