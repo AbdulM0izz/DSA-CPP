@@ -15,7 +15,7 @@ int firstOccurrence(vector<int>& arr, int target) {
             low = mid + 1;
         } else {
             high = mid - 1;
-        }
+        } 
     }
 
     return result;
