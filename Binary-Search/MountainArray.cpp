@@ -18,11 +18,10 @@ int peakinmountainarray (vector<int> &input) {
         } else {
             hi = mid -1;
         }
-      
     }
     return ans;
-    
 }
+
 int main () {
     int n;
     cin >> n;
