@@ -1,0 +1,15 @@
+STRINGS :
+Used to store sequence of characters
+Its Objects of class string in c++
+CLass is user define data type
+
+ASCII VALUES :
+Every characters has a numeric value attach to It
+
+STRINGS VS CLASS:
+String is a class
+sritng variables we are creating are the objects of the class
+String as dynamic memory allocation means at run time we can increase or decrease the size of the string
+But characters are the static memory allocation we canot increase or decrease at run time 
+
+
