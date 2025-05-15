@@ -30,11 +30,23 @@ int main () {
 // string s = "moiz";
 // cout << s.size() << " ";
 
-int n = 200;
-string str = to_string( n);
-str += "2";
-cout << str[1] << " ";
+// int n = 200;
+// string str = to_string( n);
+// str += "2";
+// cout << str[1] << " ";
+// string str = "moiz";
+// cout << str.size(); 
  
+// int ans = -1;
+// int count = 0;
+// char name[5];
+// cin >> name;
+// for (int i=0; i<name[i] != '\0'; i++) {
+//    count++;
+// }
+// cout << count ;
+
+
  
 return 0;
 }

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 using namespace std;
 string coutsort (string str) {
     //first create frequency array
@@ -24,8 +25,11 @@ string coutsort (string str) {
 int main () {
     string str;
     cin >> str;
+    
+    sort(str.begin(), str.end());
+    cout << str << " ";
 
-    coutsort (str);
+//    cout << coutsort (str);
 
     return 0;
 }
