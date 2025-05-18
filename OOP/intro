@@ -1,0 +1,32 @@
+Why we use obeject oriented programming ?
+
+In proceducer oriented programming we use high level language like c,cobol,fortan in past; Program was divied into tasks and that tasks groups into functions; We have the make data global that functions can access the data but this it is difficult to track which function change data to solve this problem OOP is come
+
+We bind data to the function using it; oop protect data to accidental changes
+
+ => Class {
+    User defined data type
+    Variables of the class are object
+ }
+
+ => Objects {
+    Objects are variables type class
+    And this variable have properties which are in class
+ }
+
+ => Constructor {
+    Used to initialize an object
+    this is a function which is called when object is created
+    
+    same name as class name
+    types of constructors
+    1 default {no paramter or arguments}
+    2 parameterized
+    3 copy constructor
+ }
+
+ => Destructor {
+    it is a function called when object is deleted;
+
+    we canot pass any paramter to destructor;
+ }
