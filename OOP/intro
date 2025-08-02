@@ -28,5 +28,5 @@ We bind data to the function using it; oop protect data to accidental changes
  => Destructor {
     it is a function called when object is deleted;
 
-    we canot pass any paramter to destructor;
+    we canot pass any paramter to destructor
  }
