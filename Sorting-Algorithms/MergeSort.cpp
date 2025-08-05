@@ -1,61 +1,64 @@
 #include <iostream>
-using namespace std;
+#include <vector>
 
-void merge(int arr[], int l, int mid, int r) {
-    int an = mid - l + 1;
-    int bn = r - mid;
-    // create two first two sub arrays
-    int a [an];
-    int b [bn];
-    //filling temp arrays
-    for ( int i = 0; i < an; i++) {
-        a[i] = arr [ l + i];
-    }
-    for ( int j = 0; j < bn; j++) {
-        b[j] = arr [ mid + 1 + j];
-    }
+void merge(std::vector<int>& arr, int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
 
-    int i = 0, j = 0, k = l; 
+    std::vector<int> L(n1), R(n2);
 
-    while (i < an  && j < bn ) {
-        if (a[i] < b[j]) {
-            arr[k++] = a[i++];
-        }else{
-            arr[k++] = b[j++];
+    for (int i = 0; i < n1; ++i)
+        L[i] = arr[left + i];
+    for (int j = 0; j < n2; ++j)
+        R[j] = arr[mid + 1 + j];
+
+    int i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) {
+            arr[k] = L[i];
+            ++i;
+        } else {
+            arr[k] = R[j];
+            ++j;
         }
+        ++k;
     }
 
-    while (i < an)
-    {
-        arr[k++] = a[i++];
-    }
-    
-    while (j < bn)
-    {
-        arr[k++] = a[i++];
+    while (i < n1) {
+        arr[k] = L[i];
+        ++i;
+        ++k;
     }
 
+    while (j < n2) {
+        arr[k] = R[j];
+        ++j;
+        ++k;
+    }
 }
 
-void mergesort(int arr[], int l, int r) {
-    // base case
-    if (l >= r) {
+void mergeSort(std::vector<int>& arr, int left, int right) {
+    if (left >= right)
         return;
-    }
 
-    int mid = (l + r) / 2;
-    mergesort(arr, l, mid);
-    mergesort(arr, mid + 1, r);
-    merge(arr, l, mid, r);
+    int mid = left + (right - left) / 2;
+    mergeSort(arr, left, mid);
+    mergeSort(arr, mid + 1, right);
+    merge(arr, left, mid, right);
 }
 
 int main() {
-    int arr[5] = {20, 30, 10, 40, 50};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    std::vector<int> arr = {5, 2, 9, 1, 6, 3};
+    mergeSort(arr, 0, arr.size() - 1);
 
-    mergesort(arr, 0, n - 1);
+    for (int num : arr)
+        std::cout << num << " ";
+    std::cout << std::endl;
+
     return 0;
 }
+
+
 
 
  //given two sorted arrays when have merge that two arrays and create one sorted , dived arrays in smaller parts and make sorted array
