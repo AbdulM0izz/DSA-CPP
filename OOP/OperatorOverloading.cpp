@@ -22,7 +22,7 @@ public:
 
 int main() {
     Complex c1(2, 3), c2(4, 5);
-    Complex c3 = c1 + c2; // uses overloaded operator
+    Complex c3 = c1 + c2;
     c3.show();
     return 0;
 }
